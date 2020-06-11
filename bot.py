@@ -47,7 +47,7 @@ emb = discord.Embed()
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.online, game=discord.Game(name="!SG help", type=2))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game(name="!SG help", type=2))
     print('We have logged in as {0.user}'.format(client))
 
 @client.event
