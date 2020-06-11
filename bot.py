@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import collections
 import random
+import os
 
 images = []
 videos = []
@@ -39,7 +40,7 @@ for result in resultsQ():
      except  AttributeError:
         pass
 
-TOKEN = 'NjkxOTg3OTUwNDA1MTU2ODg3.XpVK_Q.SfTGibBoPr61O0sTIv4ncG8heYU'
+TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
 emb = discord.Embed()
